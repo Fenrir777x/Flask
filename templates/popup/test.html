@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="song-list">
+        <div class="song-item" onclick="openPopup('Song Title 1', 'Artist Name 1', 'Album 1', '2024')">Song Title 1</div>
+        <div class="song-item" onclick="openPopup('Song Title 2', 'Artist Name 2', 'Album 2', '2023')">Song Title 2</div>
+        <div class="song-item" onclick="openPopup('Song Title 3', 'Artist Name 3', 'Album 3', '2022')">Song Title 3</div>
+        <!-- Altri elementi -->
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-artist"></p>
+            <p id="popup-album"></p>
+            <p id="popup-year"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
